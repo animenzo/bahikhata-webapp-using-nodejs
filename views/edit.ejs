@@ -1,0 +1,14 @@
+<%- include("./partials/header") %>
+   
+   
+   <div class="p-[10%] flex flex-col">
+        <form action="/update/<%=filename%>" method="post">
+            <h3 class="mt-5 text-xl">You're editing hisaab of <span class="text-blue-500"><%= filename.split(".")[0]%></span> date</h3>
+            <textarea name="content" class="w-1/2 h-[50vh] resize-none rounded-md bg-zinc-100" placeholder="Write your hisaab...">
+                <%=filedata%>
+            </textarea>
+            <input type="submit" class="bg-green-500 mt-5 px-5 py-3 rounded-md block" value="Update Hisaab">
+        </form>
+       </div>
+    </div>
+    <%- include("./partials/footer") %>

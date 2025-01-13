@@ -1,0 +1,15 @@
+<%- include("./partials/header") %>
+
+           
+    <div class="px-10  hisaabs">
+        
+        <h3 class="text-2xl font-medium mb-5 tracking-tight mt-10">Create New Bahikhata</h3>
+        <form action="/createhisaab" method="post">
+            <input type="text" placeholder="Title" class="text-md px-3 rounded-md py-2 w-1/2 mb-5 mt-10 tracking-tight" name="title">
+            <textarea name="content" class="text-md px-3 py-2 w-1/2  block resize-none min-h-52 bg-zinc-200 rounded-md" placeholder="Write your hisaab..."></textarea>
+            <input type="submit" class="block mt-5 px-5 py-3 rounded-md bg-blue-500 text-white" value="Create">
+        </form>  
+    </div>
+    
+
+    <%- include("./partials/footer") %>

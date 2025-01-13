@@ -1,0 +1,14 @@
+<%- include("./partials/header") %>
+
+        <div class="p-[10%] mb-5">
+            <h2 class="text-xl mb-5">hisaab of <span class="text-blue-500"><%=filename.split(".")[0]%></span> date </h2>
+            <p class="mb-10 bg-zinc-50 h-[40vh]">
+                <%=filedata%>
+            </p>
+            <a href="/edit/<%=filename%>" class="bg-green-500 px-[3%] rounded-md py-[1%]">Edit this Hisaab</a>
+            <a href="/delete/<%=filename%>" class=" ">
+                <i class=' text-red-700 text-2xl ml-10 bx bxs-trash ' ></i>
+            </a>
+       </div>
+    </div>
+    <%- include("./partials/footer") %>
