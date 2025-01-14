@@ -115,4 +115,3 @@ app.get("/delete/:filename", function (req, res) {
 
 app.listen(3000);
 
-// kuroinu 2
